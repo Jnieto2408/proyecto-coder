@@ -1,0 +1,753 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+/* Propiedades Logo */
+.logo{
+    font-family: 'Dancing Script', cursive;
+    font-size: clamp(2rem, 4vw, 4.5rem);
+    text-decoration: none;
+    color: black;
+}
+/* Texto flower */
+.logo h1 div{
+    font-family: 'Dancing Script', cursive;
+    background-image: url(../img/imgLogos/Logo.jpg);
+    background-size: contain;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-left: clamp(-0.625rem, -0.62rem, 0rem);
+    display: inline-block;
+}
+.logo h1{
+    margin: 1rem;
+    display: inline-block;
+}
+header{
+    border-bottom: 1.5px solid rgba(128, 128, 128, 0.45);
+    top: 0;
+    position: sticky;
+    z-index: 1;
+    background-color: white;
+}
+/* Propiedades del menu */
+.menu{
+    grid-area: menu;
+}
+.menuNav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menuItems{
+    border-top: 0.3px solid gray;
+    border-bottom: 0.3px solid gray;
+    list-style: none;
+}
+.menuItems a{
+    display: inline-block;
+    padding: 1rem;
+    margin: 0rem 1rem;
+    text-decoration: none;
+}
+.menuItems a li{
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    font-size: clamp(0.7rem, 1.5vw, 1.4rem);
+}
+.menuItems a:hover{
+    background-color: black;
+    transition: all 0.7s ease;
+}
+.menuItems a:hover li{
+    color: white;
+}
+/* Propiedades del footer */
+.footer{
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    border-top: 0.3px solid gray;
+    height: 100px;
+    justify-content: space-between;
+    margin: 0rem 2rem;
+    font-size: clamp(0.5rem, 1vw, 1rem);
+}
+.footer div a{
+    text-decoration: none;
+    margin: 0.5rem;
+}
+.footer div a img{
+    height: 30px;
+    width: 30px;
+}
+/* Propiedades unicas INDEX */
+.gridIndex{
+    display: grid;
+    grid-template-columns: 100% ;
+    grid-template-rows: 10% 40% 40% 10%;
+    grid-template-areas:
+    "menu"
+    "mIndex"
+    "tIndex"
+    "footer"
+    ;
+}
+/* Intro Index*/
+.mainIndex{
+    grid-area: mIndex;
+}
+.intro{
+    background-image: url(../img/imgIndex/IntroIndex.png);
+    background-size: cover;
+    background-position: 0% 50%;
+    height: 490px;
+    display: flex;
+    justify-content: left;
+}
+.intro .introIndex{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    margin-left: 8rem;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+.intro .introIndex h2,.intro .introIndex p,.intro .introIndex a{
+    margin-top: 1rem;
+}
+.intro .introIndex h2{
+    font-size: clamp(1rem, 2vw, 2rem);
+}
+.intro .introIndex p{
+    max-width: 25ch;
+    font-size: clamp(0.7rem, 1vw, 1rem);
+}
+.intro .introIndex a{
+    display: inline-block;
+    background-color: rgb(252, 179, 179);
+    border-radius: 50px;
+    padding: 0.5rem 2rem;
+    text-decoration: none;
+    color: white;
+    font-size: clamp(0.5rem, 1vw, 1rem);
+}
+.intro .introIndex a:hover{
+    background-color: rgb(253, 148, 148);
+}
+/* Reviews Index*/
+.testimonios{
+    grid-area: tIndex;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.testimonios .testimoniosTitulo{
+    text-align: center;
+}
+.testimonios .testimoniosTitulo h3,.testimonios .testimoniosTitulo p{
+    margin-top: 1rem;
+}
+.testimonios .testimoniosTitulo h3{
+    font-size: clamp(1rem, 2vw, 2rem);
+}
+.testimonios .testimoniosTitulo p{
+    font-size: clamp(0.7rem, 1vw, 1rem);
+    margin-bottom: 2rem;
+}
+.testimoniosFotos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+    grid-template-areas:
+    "tUno tDos tTres tCuatro"
+    ;
+    gap: 7vw;
+}
+.testimoniosFotos .tUno{
+    grid-area: tUno;
+}
+.testimoniosFotos .tDos{
+    grid-area: tDos;
+}
+.testimoniosFotos .tTres{
+    grid-area: tTres;
+}
+.testimoniosFotos .tCuatro{
+    grid-area: tCuatro;
+}
+.testimoniosFotos div img{
+    height: auto;
+    width: 100%;
+}
+.testimoniosFotos div p{
+    max-width: 250px;
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: clamp(0.7rem, 1vw, 1rem);
+}
+.testimonios a{
+    margin: 3rem;
+    text-decoration: none;
+    background-color: rgb(252, 179, 179);
+    color: white;
+    padding: 0.5rem 2rem;
+    border-radius: 50px;
+    font-size: clamp(0.5rem, 1vw, 1rem);
+}
+.testimonios a:hover{
+    background-color: rgb(253, 148, 148);
+}
+/* Propiedades unicas EXPERIENCE */
+.gridExperience{
+    display: grid;
+    grid-template-columns: 100% ;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-areas:
+    "menu"
+    "mExperience"
+    "footer"
+    ;
+}
+.experience{
+    grid-area: mExperience;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.experience h2{
+    margin: min(2vw, 2.5rem);
+    font-size: clamp(1.5rem, 2.5vw, 3rem);
+}
+.experience h3{
+    margin: 3rem 0rem 1.5rem;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    text-align: center;
+    font-size: 25px;
+}
+.experience a{
+    background-color: rgb(252, 179, 179);
+    border-radius: 50px;
+    padding: 0.5rem 2rem;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 3rem;
+    font-size: clamp(0.5rem, 1vw, 1rem);
+}
+.experience a:hover{
+    background-color: rgb(253, 148, 148);
+}
+.experienceInfo{
+    display: flex;
+    align-items: center;
+}
+.experienceInfo div p{
+    text-align: center;
+    max-width: 256px;
+    margin-bottom: min(2vh, 1rem);
+    font-size: clamp(0.7rem, 1.5vw, 1.2rem);
+}
+.experienceInfo div .experienceSubtitulo{
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    font-family: 'Dancing Script', cursive;
+}
+.experienceInfo img{
+    height: auto;
+    width: 100%;
+    min-width: 100px;
+    margin: min(5vh, 2.5rem);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+/* Propiedades Unicas GALLERY */
+.gridGallery{
+    display: grid;
+    grid-template-columns: 100% ;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-areas:
+    "menu"
+    "mGallery"
+    "footer"
+    ;
+}
+.mGallery{
+    grid-area: mGallery;
+}
+.gallery h2{
+    text-align: center;
+    font-size: clamp(1.5rem, 2.5vw, 3rem);
+    margin: min(2vw, 2.5rem);
+}
+.galleryIntro{
+    background-image: url(../img/imgGallery/galleryIntro.png);
+    background-size: cover;
+    background-position:0% 40%;
+    height: 490px;
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "txtUno txtDos"
+    "txtTres txtCuatro"
+    ;
+    justify-items: center;
+    align-items: center;
+    column-gap: 3vw;
+}
+.galleryIntro img{
+    display: none;
+    grid-area: imgGallery;
+    width: 100%;
+    min-width: 125px;
+    max-width: 225px;
+    max-height: 320px;
+    height: auto;
+}
+.galleryIntro .txtUno{
+    grid-area: txtUno;
+    text-align: center;
+    max-width: 15rem;
+    font-size: clamp(0.7rem, 1.5vw, 1.2rem);
+}
+.galleryIntro .txtDos{
+    grid-area: txtDos;
+    text-align: center;
+    max-width: 15rem;
+    font-size: clamp(0.7rem, 1.5vw, 1.2rem);
+}
+.galleryIntro .txtTres{
+    grid-area: txtTres;
+    text-align: center;
+    max-width: 15rem;
+    font-size: clamp(0.7rem, 1.5vw, 1.2rem);
+}
+.galleryIntro .txtCuatro{
+    grid-area: txtCuatro;
+    text-align: center;
+    max-width: 15rem;
+    font-size: clamp(0.7rem, 1.5vw, 1.2rem);
+}
+/* galeria de fotografias */
+.customers{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 4rem 1fr 1fr;
+    grid-template-areas:
+    "tGallery tGallery tGallery tGallery"
+    "G1 G2 G3 G4"
+    "G5 G6 G7 G8"
+    ;
+    gap: 2rem;
+}
+.customers .tGallery{
+    grid-area: tGallery;
+    text-align: center;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+}
+.customers div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.G1{
+    grid-area: G1;
+}
+.G2{
+    grid-area: G2;
+}
+.G3{
+    grid-area: G3;
+}
+.G4{
+    grid-area: G4;
+}
+.G5{
+    grid-area: G5;
+}
+.G6{
+    grid-area: G6;
+}
+.G7{
+    grid-area: G7;
+}
+.G8{
+    grid-area: G8;
+}
+.customers div img{
+    max-height: 300px;
+    max-width: 200px;
+    width: 100%;
+}
+.customers div p{
+    text-align: center;
+    max-width: 12.5rem;
+    margin: 0.5rem 0rem 3rem;
+    font-size: clamp(0.7rem, 1.5vw, 1.2rem);
+}
+/* Propiedades Unicas CONTACT US */
+.gridContact{
+    display: grid;
+    grid-template-columns: 100% ;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-areas: 
+    "menu"
+    "mContact"
+    "footer"
+    ;
+}
+.contact{
+    grid-area: mContact;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "form infoC"
+    "contactMapa contactMapa"
+    ;
+    gap: 0rem 2rem;
+    padding: 0rem 5rem;
+    align-items: center;
+}
+/* columna derecha */
+.infoC{
+    grid-area: infoC;
+}
+.contact .infoC ul{
+    list-style: none;
+    background-color: rgba(252, 179, 179, 0.231);
+    padding: 3rem 1rem;
+    font-size: clamp(0.7rem, 1.5vw, 1.2rem);
+}
+.contact .infoC ul hr{
+    margin: 1rem 0rem;
+}
+/* columna izquierda */
+.contactInfo{
+    grid-area: form;
+}
+.contactForm{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 0.4fr 0.4fr 1fr;
+    grid-template-areas:
+    "tituloForm tituloForm" 
+    "nameForm emailForm"
+    "phoneForm phoneForm"
+    "messageForm messageForm"
+    ;
+    justify-items: start;
+    align-items: center;
+}
+.tituloForm{
+    grid-area: tituloForm;
+}
+.tituloForm h2{
+    margin-bottom: 1rem;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+}
+.tituloForm p{
+    padding-bottom: 2rem;
+    font-size: clamp(0.7rem, 1.5vw, 1.2rem);
+}
+.nameForm{
+    grid-area: nameForm;
+    font-size: clamp(0.7rem, 1.5vw, 1.2rem);
+}
+.emailForm{
+    grid-area: emailForm;
+    font-size: clamp(0.7rem, 1.5vw, 1.2rem);
+}
+.phoneForm{
+    grid-area: phoneForm;
+    font-size: clamp(0.7rem, 1.5vw, 1.2rem);
+}
+.messageForm{
+    grid-area: messageForm;
+    font-size: clamp(0.7rem, 1.5vw, 1.2rem);
+    display: flex;
+    flex-direction: column;
+}
+.contact .contactForm div label span{
+    color: red;
+}
+/* mapa ubicacion */
+.contactMapa{
+    grid-area: contactMapa;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    overflow: hidden;
+    padding-bottom: 40%;
+    position: relative;
+    height: 0;
+}
+.contactMapa iframe{
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+/* Propiedades unicas SHOP */
+.gridShop{
+    display: grid;
+    grid-template-columns: 100% ;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-areas: 
+    "menu"
+    "mShop"
+    "footer"
+    ;
+}
+.mShop{
+    grid-area: mShop;
+}
+.shop{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "shopTitulo shopTitulo shopTitulo shopTitulo shopTitulo"
+    "S1 S2 S3 S4 S5"
+    "S6 S7 S8 S9 S10"
+    "S11 S12 S13 S14 S15"
+    "S16 S17 S18 S19 S20"
+    ;
+    margin-bottom: 5rem;
+    justify-items: center;
+    row-gap: 2rem;
+}
+.shopTitulo{
+    grid-area: shopTitulo;
+    justify-self: start;
+    margin-left: clamp(1rem, 3vw, 3rem);
+}
+.shop .shopTitulo h2{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-size: clamp(1.5rem, 2.5vw, 3rem);
+}
+.shop .shopTitulo p{
+    margin-bottom: 1.5rem;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+}
+.shop .fotoShop{
+    text-align: center;
+    font-size: clamp(0.7rem, 1.3vw, 1.2rem);
+    margin: 0rem 1rem;
+}
+.shop .fotoShop img{
+    height: auto;
+    width: 100%;
+    max-width: 155px;
+}
+.S1{
+    grid-area: S1;
+}
+.S2{
+    grid-area: S2;
+}
+.S3{
+    grid-area: S3;
+}
+.S4{
+    grid-area: S4;
+}
+.S5{
+    grid-area: S5;
+}
+.S6{
+    grid-area: S6;
+}
+.S7{
+    grid-area: S7;
+}
+.S8{
+    grid-area: S8;
+}
+.S9{
+    grid-area: S9;
+}
+.S10{
+    grid-area: S10;
+}
+.S11{
+    grid-area: S11;
+}
+.S12{
+    grid-area: S12;
+}
+.S13{
+    grid-area: S13;
+}
+.S14{
+    grid-area: S14;
+}
+.S15{
+    grid-area: S15;
+}
+.S16{
+    grid-area: S16;
+}
+.S17{
+    grid-area: S17;
+}
+.S18{
+    grid-area: S18;
+}
+.S19{
+    grid-area: S19;
+}
+.S20{
+    grid-area: S20;
+}
+/* Mediaqueries Tablet-Celular */
+@media screen and (max-width:850px) {
+    /* Condiciones generales */
+    .logo{
+        margin: -0.7rem;
+    }
+    /* Cambios en Menu */
+    .menuNav{
+        flex-direction: column;
+    }
+    .menuItems{
+        margin-bottom: 0.3rem;
+    }
+    .menuItems a{
+        padding: 0.5rem;
+        margin: 0rem 0.5rem;
+    }
+    /* Cambios en Footer */
+    .footer div a{
+        margin: 0.15rem;
+    }
+    .footer div a img{
+        height: 15px;
+        width: 15px;
+    }
+    /* Cambios Index */
+    /* Intro Index */
+    .intro{
+        height: 320px;
+    }
+    .intro .introIndex{
+        margin-top: 1rem;
+        margin-left: 1.5rem;
+    }
+    .intro .introIndex h2,.intro .introIndex p,.intro .introIndex a{
+        margin-top: 0.5rem;
+    }
+    /* Testimonios Index */
+    .testimonios .testimoniosTitulo h3,.testimonios .testimoniosTitulo p{
+        margin-top: 0.5rem;
+    }
+    .testimoniosFotos{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "tUno tDos"
+        "tTres tCuatro"
+        ;
+    }
+    .testimoniosFotos div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .testimoniosFotos div img{
+        height: auto;
+        max-width: 70%;
+    }
+    .testimoniosFotos div p{
+        max-width: 30ch;
+    }
+    /* Cambios Gallery */
+    /* Gallery Intro */
+    .galleryIntro{
+        background-image: none;
+        height: 320px;
+        padding: 1rem;
+        margin: 1rem 1rem 1rem;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "txtUno imgGallery"
+        "txtTres imgGallery"
+        ;
+    }
+    .galleryIntro img{
+        display: block;
+    }
+    .galleryIntro .txtDos{
+        display: none;
+    }
+    .galleryIntro .txtCuatro{
+        display: none;
+    }
+    /* Gallery Customers */
+    .customers{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 3rem 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "tGallery tGallery"
+        "G1 G2"
+        "G3 G4"
+        "G5 G6"
+        "G7 G8"
+        ;
+    }
+    .customers div img{
+        width: 70%;
+        min-width: 100px;
+    }
+    .customers div p{
+        margin: 0.5rem 0rem 1rem;
+        max-width: 20ch;
+    }
+    /* Cambios Contact */
+    /* Contact Main */
+    .contact{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.8fr;
+        grid-template-areas: 
+        "infoC"
+        "form"
+        "contactMapa"
+        ;
+        padding: 1rem 1rem;
+    }
+    .infoC{
+        margin-bottom: 1rem;
+    }
+    /* Cambios Shop */
+    /* Shop Main */
+    .shop{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "shopTitulo shopTitulo shopTitulo shopTitulo"
+        "S1 S2 S3 S4"
+        "S5 S6 S7 S8"
+        "S9 S10 S11 S12"
+        "S13 S14 S15 S16"
+        "S17 S18 S19 S20"
+        ;
+        margin-bottom: 3rem;
+        row-gap: 1.5rem;
+    }
+    .shop .fotoShop{
+        margin: 0rem 0.7rem;
+    }
+}
