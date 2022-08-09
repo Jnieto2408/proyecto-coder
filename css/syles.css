@@ -63,7 +63,7 @@ header{
     font-size: clamp(0.7rem, 1.5vw, 1.4rem);
 }
 .menuItems a:hover{
-    background-color: black;
+    background-color: red;
     transition: all 0.7s ease;
 }
 .menuItems a:hover li{
