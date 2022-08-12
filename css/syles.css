@@ -11,20 +11,16 @@ body{
 /* Propiedades Logo */
 .logo{
     font-family: 'Dancing Script', cursive;
-    font-size: clamp(2rem, 4vw, 4.5rem);
-    text-decoration: none;
     color: black;
 }
 /* Texto flower */
-.logo h1 div{
+.logo h1 span{
     font-family: 'Dancing Script', cursive;
     background-image: url(../img/imgLogos/Logo.jpg);
     background-size: contain;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    margin-left: clamp(-0.625rem, -0.62rem, 0rem);
-    display: inline-block;
 }
 .logo h1{
     margin: 1rem;
