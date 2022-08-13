@@ -496,117 +496,10 @@ header{
     position: absolute;
 }
 /* Propiedades unicas SHOP */
-.gridShop{
-    display: grid;
-    grid-template-columns: 100% ;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "menu"
-    "mShop"
-    "footer"
-    ;
-}
-.mShop{
-    grid-area: mShop;
-}
-.shop{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    "shopTitulo shopTitulo shopTitulo shopTitulo shopTitulo"
-    "S1 S2 S3 S4 S5"
-    "S6 S7 S8 S9 S10"
-    "S11 S12 S13 S14 S15"
-    "S16 S17 S18 S19 S20"
-    ;
-    margin-bottom: 5rem;
-    justify-items: center;
-    row-gap: 2rem;
-}
-.shopTitulo{
-    grid-area: shopTitulo;
-    justify-self: start;
-    margin-left: clamp(1rem, 3vw, 3rem);
-}
-.shop .shopTitulo h2{
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-    font-size: clamp(1.5rem, 2.5vw, 3rem);
-}
-.shop .shopTitulo p{
-    margin-bottom: 1.5rem;
-    font-size: clamp(1rem, 1.5vw, 1.2rem);
-}
-.shop .fotoShop{
-    text-align: center;
-    font-size: clamp(0.7rem, 1.3vw, 1.2rem);
-    margin: 0rem 1rem;
-}
 .shop .fotoShop img{
     height: auto;
     width: 100%;
     max-width: 155px;
-}
-.S1{
-    grid-area: S1;
-}
-.S2{
-    grid-area: S2;
-}
-.S3{
-    grid-area: S3;
-}
-.S4{
-    grid-area: S4;
-}
-.S5{
-    grid-area: S5;
-}
-.S6{
-    grid-area: S6;
-}
-.S7{
-    grid-area: S7;
-}
-.S8{
-    grid-area: S8;
-}
-.S9{
-    grid-area: S9;
-}
-.S10{
-    grid-area: S10;
-}
-.S11{
-    grid-area: S11;
-}
-.S12{
-    grid-area: S12;
-}
-.S13{
-    grid-area: S13;
-}
-.S14{
-    grid-area: S14;
-}
-.S15{
-    grid-area: S15;
-}
-.S16{
-    grid-area: S16;
-}
-.S17{
-    grid-area: S17;
-}
-.S18{
-    grid-area: S18;
-}
-.S19{
-    grid-area: S19;
-}
-.S20{
-    grid-area: S20;
 }
 /* Mediaqueries Tablet-Celular */
 @media screen and (max-width:850px) {
@@ -726,24 +619,5 @@ header{
     }
     .infoC{
         margin-bottom: 1rem;
-    }
-    /* Cambios Shop */
-    /* Shop Main */
-    .shop{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: 
-        "shopTitulo shopTitulo shopTitulo shopTitulo"
-        "S1 S2 S3 S4"
-        "S5 S6 S7 S8"
-        "S9 S10 S11 S12"
-        "S13 S14 S15 S16"
-        "S17 S18 S19 S20"
-        ;
-        margin-bottom: 3rem;
-        row-gap: 1.5rem;
-    }
-    .shop .fotoShop{
-        margin: 0rem 0.7rem;
     }
 }
