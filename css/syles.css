@@ -496,7 +496,7 @@ header{
     position: absolute;
 }
 /* Propiedades unicas SHOP */
-.shop .fotoShop img{
+.card-img-top{
     height: auto;
     width: 100%;
     max-width: 155px;
