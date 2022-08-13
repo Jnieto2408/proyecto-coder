@@ -496,6 +496,9 @@ header{
     position: absolute;
 }
 /* Propiedades unicas SHOP */
+.card-shop{
+    max-width: 155px;
+}
 .card-img-top{
     height: auto;
     width: 100%;
