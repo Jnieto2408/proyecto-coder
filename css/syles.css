@@ -337,92 +337,18 @@ header{
     font-size: clamp(0.7rem, 1.5vw, 1.2rem);
 }
 /* Propiedades Unicas CONTACT US */
-.contact{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "form infoC"
-    "contactMapa contactMapa"
-    ;
-    gap: 0rem 2rem;
-    padding: 0rem 5rem;
-    align-items: center;
-}
-/* columna derecha */
-.infoC{
-    grid-area: infoC;
-}
-.contact .infoC ul{
-    list-style: none;
-    background-color: rgba(252, 179, 179, 0.231);
-    padding: 3rem 1rem;
-    font-size: clamp(0.7rem, 1.5vw, 1.2rem);
-}
-.contact .infoC ul hr{
-    margin: 1rem 0rem;
-}
-/* columna izquierda */
-.contactInfo{
-    grid-area: form;
-}
-.contactForm{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 0.4fr 0.4fr 1fr;
-    grid-template-areas:
-    "tituloForm tituloForm" 
-    "nameForm emailForm"
-    "phoneForm phoneForm"
-    "messageForm messageForm"
-    ;
-    justify-items: start;
-    align-items: center;
-}
-.tituloForm{
-    grid-area: tituloForm;
-}
-.tituloForm h2{
-    margin-bottom: 1rem;
-    font-size: clamp(1.5rem, 2vw, 2rem);
-}
-.tituloForm p{
-    padding-bottom: 2rem;
-    font-size: clamp(0.7rem, 1.5vw, 1.2rem);
-}
-.nameForm{
-    grid-area: nameForm;
-    font-size: clamp(0.7rem, 1.5vw, 1.2rem);
-}
-.emailForm{
-    grid-area: emailForm;
-    font-size: clamp(0.7rem, 1.5vw, 1.2rem);
-}
-.phoneForm{
-    grid-area: phoneForm;
-    font-size: clamp(0.7rem, 1.5vw, 1.2rem);
-}
-.messageForm{
-    grid-area: messageForm;
-    font-size: clamp(0.7rem, 1.5vw, 1.2rem);
-    display: flex;
-    flex-direction: column;
-}
-.contact .contactForm div label span{
-    color: red;
-}
 /* mapa ubicacion */
-.contactMapa{
+.contact-mapa{
     grid-area: contactMapa;
     display: flex;
     justify-content: center;
-    margin-bottom: 3rem;
+    margin: 3rem 10%;
     overflow: hidden;
     padding-bottom: 40%;
     position: relative;
     height: 0;
 }
-.contactMapa iframe{
+.contact-mapa iframe{
     left: 0;
     top: 0;
     height: 100%;
