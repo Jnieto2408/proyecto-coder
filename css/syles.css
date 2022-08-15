@@ -85,21 +85,7 @@ header{
     width: 30px;
 }
 /* Propiedades unicas INDEX */
-.gridIndex{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-    "menu"
-    "mIndex"
-    "tIndex"
-    "footer"
-    ;
-}
 /* Intro Index*/
-.mainIndex{
-    grid-area: mIndex;
-}
 .intro{
     background-image: url(../img/imgIndex/IntroIndex.png);
     background-size: cover;
@@ -141,7 +127,6 @@ header{
 }
 /* Reviews Index*/
 .testimonios{
-    grid-area: tIndex;
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
@@ -205,18 +190,7 @@ header{
     background-color: rgb(253, 148, 148);
 }
 /* Propiedades unicas EXPERIENCE */
-.gridExperience{
-    display: grid;
-    grid-template-columns: 100% ;
-    grid-template-rows: auto;
-    grid-template-areas:
-    "menu"
-    "mExperience"
-    "footer"
-    ;
-}
 .experience{
-    grid-area: mExperience;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -266,19 +240,6 @@ header{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 /* Propiedades Unicas GALLERY */
-.gridGallery{
-    display: grid;
-    grid-template-columns: 100% ;
-    grid-template-rows: auto;
-    grid-template-areas:
-    "menu"
-    "mGallery"
-    "footer"
-    ;
-}
-.mGallery{
-    grid-area: mGallery;
-}
 .gallery h2{
     text-align: center;
     font-size: clamp(1.5rem, 2.5vw, 3rem);
@@ -303,7 +264,6 @@ header{
 }
 .galleryIntro img{
     display: none;
-    grid-area: imgGallery;
     width: 100%;
     min-width: 125px;
     max-width: 225px;
@@ -392,18 +352,7 @@ header{
     font-size: clamp(0.7rem, 1.5vw, 1.2rem);
 }
 /* Propiedades Unicas CONTACT US */
-.gridContact{
-    display: grid;
-    grid-template-columns: 100% ;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "menu"
-    "mContact"
-    "footer"
-    ;
-}
 .contact{
-    grid-area: mContact;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
