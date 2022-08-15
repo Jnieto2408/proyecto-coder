@@ -66,23 +66,8 @@ header{
     color: white;
 }
 /* Propiedades del footer */
-.footer{
-    grid-area: footer;
-    display: flex;
-    align-items: center;
-    border-top: 0.3px solid gray;
-    height: 100px;
-    justify-content: space-between;
-    margin: 0rem 2rem;
-    font-size: clamp(0.5rem, 1vw, 1rem);
-}
-.footer div a{
-    text-decoration: none;
-    margin: 0.5rem;
-}
-.footer div a img{
-    height: 30px;
-    width: 30px;
+.footer-dos{
+    background-color: rgba(0, 0, 0, 0.2)
 }
 /* Propiedades unicas INDEX */
 /* Intro Index*/
