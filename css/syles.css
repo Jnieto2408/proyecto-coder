@@ -24,7 +24,6 @@ body{
 }
 .logo h1{
     margin: 1rem;
-    display: inline-block;
 }
 header{
     border-bottom: 1.5px solid rgba(128, 128, 128, 0.45);
