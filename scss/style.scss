@@ -1,0 +1,175 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+// Sub-archivos SASS
+@import "./base/variables";
+
+body{
+    font-family: $textos;
+    .menu{
+        border-bottom: 1.5px solid rgba(128, 128, 128, 0.45);
+        top: 0;
+        position: sticky;
+        z-index: 1;
+        background-color: white;
+        nav{
+            div{
+                .logo{
+                    font-family: $textos-especiales;
+                    h1{
+                        margin: 0rem 1rem;
+                    }
+                    span{
+                        background-image: url(../img/imgLogos/Logo.jpg);
+                        background-size: contain;
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        color: transparent;
+                    }
+                }
+            }
+        }
+    }
+    .mainIndex{
+        .intro{
+            background-image: url(../img/imgIndex/IntroIndex.png);
+            background-size: cover;
+            background-position: 0% 50%;
+            height: 490px;
+            display: flex;
+            justify-content: left;
+            .introIndex{
+                display: flex;
+                flex-direction: column;
+                margin-top: 5rem;
+                margin-left: 8rem;
+                justify-content: flex-start;
+                align-items: center;
+                text-align: center;
+                h2{
+                    margin-top: 1rem;
+                    font-size: clamp(1rem, 2vw, 2rem);
+                }
+                p{
+                    margin-top: 1rem;
+                    max-width: 25ch;
+                    font-size: clamp(0.7rem, 1vw, 1rem);
+                }
+                a{
+                    margin-top: 1rem;
+                    display: inline-block;
+                    background-color: rgb(252, 179, 179);
+                    border-radius: 50px;
+                    padding: 0.5rem 2rem;
+                    text-decoration: none;
+                    color: white;
+                    font-size: clamp(0.5rem, 1vw, 1rem);
+                    &:hover{
+                        background-color: rgb(253, 148, 148);
+                    }
+                }
+            }
+        }
+    }
+    .testimonios{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .testimoniosTitulo{
+            text-align: center;
+            h3{
+                margin-top: 1rem;
+                font-size: clamp(1rem, 2vw, 2rem);
+            }
+            p{
+                margin-top: 1rem;
+                font-size: clamp(0.7rem, 1vw, 1rem);
+                margin-bottom: 2rem;
+            }
+        }
+        .testimoniosFotos{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 100%;
+            grid-template-areas:
+            "tUno tDos tTres tCuatro"
+            ;
+            gap: 7vw;
+        }
+        .tUno{
+            grid-area: tUno;
+            img{
+                height: auto;
+                width: 100%;
+            }
+            p{
+                max-width: 250px;
+                text-align: center;
+                margin-top: 0.5rem;
+                font-size: clamp(0.7rem, 1vw, 1rem);
+            }
+        }
+        .tDos{
+            grid-area: tDos;
+            img{
+                height: auto;
+                width: 100%;
+            }
+            p{
+                max-width: 250px;
+                text-align: center;
+                margin-top: 0.5rem;
+                font-size: clamp(0.7rem, 1vw, 1rem);
+            }
+        }
+        .tTres{
+            grid-area: tTres;
+            img{
+                height: auto;
+                width: 100%;
+            }
+            p{
+                max-width: 250px;
+                text-align: center;
+                margin-top: 0.5rem;
+                font-size: clamp(0.7rem, 1vw, 1rem);
+            }
+        }
+        .tCuatro{
+            grid-area: tCuatro;
+            img{
+                height: auto;
+                width: 100%;
+            }
+            p{
+                max-width: 250px;
+                text-align: center;
+                margin-top: 0.5rem;
+                font-size: clamp(0.7rem, 1vw, 1rem);
+            }
+        }
+        a{
+            margin: 3rem;
+            text-decoration: none;
+            background-color: rgb(252, 179, 179);
+            color: white;
+            padding: 0.5rem 2rem;
+            border-radius: 50px;
+            font-size: clamp(0.5rem, 1vw, 1rem);
+            &:hover{
+                background-color: rgb(253, 148, 148);
+            }
+        }
+    }
+    footer{
+        .footer-dos{
+            background-color: rgba(0, 0, 0, 0.2)
+        }
+    }
+}
