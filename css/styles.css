@@ -40,19 +40,19 @@ body {
       text-align: center; }
       body .mainIndex .intro .introIndex h2 {
         margin-top: 1rem;
-        font-size: clamp(1rem, 2vw, 2rem); }
+        font-size: clamp(1.25rem, calc(0.977rem + 1.36vw), 2rem); }
       body .mainIndex .intro .introIndex p {
         margin-top: 1rem;
         max-width: 25ch;
-        font-size: clamp(0.7rem, 1vw, 1rem); }
+        font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem); }
       body .mainIndex .intro .introIndex a {
-        margin-top: 1rem;
-        display: inline-block;
         background-color: #fcb3b3;
+        color: white;
         border-radius: 50px;
         padding: 0.5rem 2rem;
         text-decoration: none;
-        color: white;
+        margin-top: 1rem;
+        display: inline-block;
         font-size: clamp(0.5rem, 1vw, 1rem); }
         body .mainIndex .intro .introIndex a:hover {
           background-color: #fd9494; }
@@ -66,10 +66,10 @@ body {
       text-align: center; }
       body .testimonios .testimoniosTitulo h3 {
         margin-top: 1rem;
-        font-size: clamp(1rem, 2vw, 2rem); }
+        font-size: clamp(1.25rem, calc(0.977rem + 1.36vw), 2rem); }
       body .testimonios .testimoniosTitulo p {
         margin-top: 1rem;
-        font-size: clamp(0.7rem, 1vw, 1rem);
+        font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem);
         margin-bottom: 2rem; }
     body .testimonios .testimoniosFotos {
       display: grid;
@@ -86,7 +86,7 @@ body {
         max-width: 250px;
         text-align: center;
         margin-top: 0.5rem;
-        font-size: clamp(0.7rem, 1vw, 1rem); }
+        font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem); }
     body .testimonios .tDos {
       grid-area: tDos; }
       body .testimonios .tDos img {
@@ -96,7 +96,7 @@ body {
         max-width: 250px;
         text-align: center;
         margin-top: 0.5rem;
-        font-size: clamp(0.7rem, 1vw, 1rem); }
+        font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem); }
     body .testimonios .tTres {
       grid-area: tTres; }
       body .testimonios .tTres img {
@@ -106,7 +106,7 @@ body {
         max-width: 250px;
         text-align: center;
         margin-top: 0.5rem;
-        font-size: clamp(0.7rem, 1vw, 1rem); }
+        font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem); }
     body .testimonios .tCuatro {
       grid-area: tCuatro; }
       body .testimonios .tCuatro img {
@@ -116,14 +116,14 @@ body {
         max-width: 250px;
         text-align: center;
         margin-top: 0.5rem;
-        font-size: clamp(0.7rem, 1vw, 1rem); }
+        font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem); }
     body .testimonios a {
-      margin: 3rem;
-      text-decoration: none;
       background-color: #fcb3b3;
       color: white;
-      padding: 0.5rem 2rem;
       border-radius: 50px;
+      padding: 0.5rem 2rem;
+      text-decoration: none;
+      margin: 3rem;
       font-size: clamp(0.5rem, 1vw, 1rem); }
       body .testimonios a:hover {
         background-color: #fd9494; }
