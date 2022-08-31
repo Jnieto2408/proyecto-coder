@@ -472,5 +472,7 @@ body {
     font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem); }
   body .main-shop div div div .card-shop {
     max-width: 155px; }
+    body .main-shop div div div .card-shop .card-body div p {
+      font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem); }
   body footer .footer-dos {
     background-color: rgba(0, 0, 0, 0.2); }

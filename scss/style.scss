@@ -567,6 +567,13 @@ body{
                 div{
                     .card-shop{
                         max-width: 155px;
+                        .card-body{
+                            div{
+                                p{
+                                    font-size: $secundarios;
+                                }
+                            }
+                        }
                     }
                 }
             }
