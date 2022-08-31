@@ -38,31 +38,18 @@ body {
     background-position: 0% 50%;
     height: 490px;
     display: flex; }
-    @media screen and (max-width: 850px) {
-      body .mainIndex .intro {
-        height: 320px; } }
     body .mainIndex .intro .introIndex {
       flex-direction: column;
       margin-top: 5rem;
       margin-left: 8rem;
       text-align: center; }
-      @media screen and (max-width: 850px) {
-        body .mainIndex .intro .introIndex {
-          margin-top: 1rem;
-          margin-left: 1.5rem; } }
       body .mainIndex .intro .introIndex h2 {
         margin-top: 1rem;
         font-size: clamp(1.25rem, calc(0.977rem + 1.36vw), 2rem); }
-        @media screen and (max-width: 850px) {
-          body .mainIndex .intro .introIndex h2 {
-            margin-top: 0.5rem; } }
       body .mainIndex .intro .introIndex p {
         margin-top: 1rem;
         max-width: 25ch;
         font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem); }
-        @media screen and (max-width: 850px) {
-          body .mainIndex .intro .introIndex p {
-            margin-top: 0.5rem; } }
       body .mainIndex .intro .introIndex a {
         background-color: #fcb3b3;
         color: white;
@@ -74,9 +61,6 @@ body {
         font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem); }
         body .mainIndex .intro .introIndex a:hover {
           background-color: #fd9494; }
-        @media screen and (max-width: 850px) {
-          body .mainIndex .intro .introIndex a {
-            margin-top: 0.2rem; } }
   body .testimonios {
     margin-top: 2rem;
     flex-direction: column;
@@ -86,99 +70,44 @@ body {
       body .testimonios .testimoniosTitulo h3 {
         margin-top: 1rem;
         font-size: clamp(1.25rem, calc(0.977rem + 1.36vw), 2rem); }
-        @media screen and (max-width: 850px) {
-          body .testimonios .testimoniosTitulo h3 {
-            margin-top: 0.5rem; } }
       body .testimonios .testimoniosTitulo p {
         margin-top: 1rem;
         font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem);
         margin-bottom: 2rem; }
-        @media screen and (max-width: 850px) {
-          body .testimonios .testimoniosTitulo p {
-            margin-top: 0.5rem; } }
     body .testimonios .testimoniosFotos {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-rows: 100%;
       grid-template-areas: "tUno tDos tTres tCuatro";
       gap: 7vw; }
-      @media screen and (max-width: 850px) {
-        body .testimonios .testimoniosFotos {
-          grid-template-columns: 1fr 1fr;
-          grid-template-rows: 1fr 1fr;
-          grid-template-areas: "tUno tDos" "tTres tCuatro"; } }
     body .testimonios .tUno {
       grid-area: tUno; }
-      @media screen and (max-width: 850px) {
-        body .testimonios .tUno {
-          display: flex;
-          flex-direction: column;
-          align-items: center; } }
-      @media screen and (max-width: 850px) {
-        body .testimonios .tUno img {
-          max-width: 70%; } }
       body .testimonios .tUno p {
         max-width: 250px;
         text-align: center;
         margin-top: 0.5rem;
         font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem); }
-        @media screen and (max-width: 850px) {
-          body .testimonios .tUno p {
-            max-width: 30ch; } }
     body .testimonios .tDos {
       grid-area: tDos; }
-      @media screen and (max-width: 850px) {
-        body .testimonios .tDos {
-          display: flex;
-          flex-direction: column;
-          align-items: center; } }
-      @media screen and (max-width: 850px) {
-        body .testimonios .tDos img {
-          max-width: 70%; } }
       body .testimonios .tDos p {
         max-width: 250px;
         text-align: center;
         margin-top: 0.5rem;
         font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem); }
-        @media screen and (max-width: 850px) {
-          body .testimonios .tDos p {
-            max-width: 30ch; } }
     body .testimonios .tTres {
       grid-area: tTres; }
-      @media screen and (max-width: 850px) {
-        body .testimonios .tTres {
-          display: flex;
-          flex-direction: column;
-          align-items: center; } }
-      @media screen and (max-width: 850px) {
-        body .testimonios .tTres img {
-          max-width: 70%; } }
       body .testimonios .tTres p {
         max-width: 250px;
         text-align: center;
         margin-top: 0.5rem;
         font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem); }
-        @media screen and (max-width: 850px) {
-          body .testimonios .tTres p {
-            max-width: 30ch; } }
     body .testimonios .tCuatro {
       grid-area: tCuatro; }
-      @media screen and (max-width: 850px) {
-        body .testimonios .tCuatro {
-          display: flex;
-          flex-direction: column;
-          align-items: center; } }
-      @media screen and (max-width: 850px) {
-        body .testimonios .tCuatro img {
-          max-width: 70%; } }
       body .testimonios .tCuatro p {
         max-width: 250px;
         text-align: center;
         margin-top: 0.5rem;
         font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem); }
-        @media screen and (max-width: 850px) {
-          body .testimonios .tCuatro p {
-            max-width: 30ch; } }
     body .testimonios a {
       background-color: #fcb3b3;
       color: white;
@@ -239,14 +168,6 @@ body {
     justify-items: center;
     align-items: center;
     column-gap: 3vw; }
-    @media screen and (max-width: 850px) {
-      body .mGallery .gallery .galleryIntro {
-        background-image: none;
-        height: 320px;
-        margin: 1rem 1rem 1rem;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: "txtUno imgGallery" "txtTres imgGallery"; } }
     body .mGallery .gallery .galleryIntro .txtUno {
       text-align: center;
       max-width: 15rem;
@@ -257,9 +178,6 @@ body {
       max-width: 15rem;
       font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem);
       grid-area: txtDos; }
-      @media screen and (max-width: 850px) {
-        body .mGallery .gallery .galleryIntro .txtDos {
-          display: none; } }
     body .mGallery .gallery .galleryIntro .txtTres {
       text-align: center;
       max-width: 15rem;
@@ -270,29 +188,18 @@ body {
       max-width: 15rem;
       font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem);
       grid-area: txtCuatro; }
-      @media screen and (max-width: 850px) {
-        body .mGallery .gallery .galleryIntro .txtCuatro {
-          display: none; } }
     body .mGallery .gallery .galleryIntro img {
       grid-area: imgGallery;
       display: none;
       min-width: 125px;
       max-width: 225px;
       max-height: 320px; }
-      @media screen and (max-width: 850px) {
-        body .mGallery .gallery .galleryIntro img {
-          display: block; } }
   body .mGallery .customers {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 4rem 1fr 1fr;
     grid-template-areas: "tGallery tGallery tGallery tGallery" "G1 G2 G3 G4" "G5 G6 G7 G8";
     gap: 2rem; }
-    @media screen and (max-width: 850px) {
-      body .mGallery .customers {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 3rem 1fr 1fr 1fr 1fr;
-        grid-template-areas: "tGallery tGallery" "G1 G2" "G3 G4" "G5 G6" "G7 G8"; } }
     body .mGallery .customers .tGallery {
       grid-area: tGallery;
       text-align: center;
@@ -303,152 +210,88 @@ body {
       body .mGallery .customers .G1 img {
         max-height: 300px;
         max-width: 200px; }
-        @media screen and (max-width: 850px) {
-          body .mGallery .customers .G1 img {
-            max-width: 70%;
-            min-width: 100px; } }
       body .mGallery .customers .G1 p {
         text-align: center;
         max-width: 12.5rem;
         margin: 0.5rem 0rem 3rem;
         font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem); }
-        @media screen and (max-width: 850px) {
-          body .mGallery .customers .G1 p {
-            margin: 0.5rem 0rem 1rem;
-            max-width: 20ch; } }
     body .mGallery .customers .G2 {
       flex-direction: column;
       grid-area: G2; }
       body .mGallery .customers .G2 img {
         max-height: 300px;
         max-width: 200px; }
-        @media screen and (max-width: 850px) {
-          body .mGallery .customers .G2 img {
-            max-width: 70%;
-            min-width: 100px; } }
       body .mGallery .customers .G2 p {
         text-align: center;
         max-width: 12.5rem;
         margin: 0.5rem 0rem 3rem;
         font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem); }
-        @media screen and (max-width: 850px) {
-          body .mGallery .customers .G2 p {
-            margin: 0.5rem 0rem 1rem;
-            max-width: 20ch; } }
     body .mGallery .customers .G3 {
       flex-direction: column;
       grid-area: G3; }
       body .mGallery .customers .G3 img {
         max-height: 300px;
         max-width: 200px; }
-        @media screen and (max-width: 850px) {
-          body .mGallery .customers .G3 img {
-            max-width: 70%;
-            min-width: 100px; } }
       body .mGallery .customers .G3 p {
         text-align: center;
         max-width: 12.5rem;
         margin: 0.5rem 0rem 3rem;
         font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem); }
-        @media screen and (max-width: 850px) {
-          body .mGallery .customers .G3 p {
-            margin: 0.5rem 0rem 1rem;
-            max-width: 20ch; } }
     body .mGallery .customers .G4 {
       flex-direction: column;
       grid-area: G4; }
       body .mGallery .customers .G4 img {
         max-height: 300px;
         max-width: 200px; }
-        @media screen and (max-width: 850px) {
-          body .mGallery .customers .G4 img {
-            max-width: 70%;
-            min-width: 100px; } }
       body .mGallery .customers .G4 p {
         text-align: center;
         max-width: 12.5rem;
         margin: 0.5rem 0rem 3rem;
         font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem); }
-        @media screen and (max-width: 850px) {
-          body .mGallery .customers .G4 p {
-            margin: 0.5rem 0rem 1rem;
-            max-width: 20ch; } }
     body .mGallery .customers .G5 {
       flex-direction: column;
       grid-area: G5; }
       body .mGallery .customers .G5 img {
         max-height: 300px;
         max-width: 200px; }
-        @media screen and (max-width: 850px) {
-          body .mGallery .customers .G5 img {
-            max-width: 70%;
-            min-width: 100px; } }
       body .mGallery .customers .G5 p {
         text-align: center;
         max-width: 12.5rem;
         margin: 0.5rem 0rem 3rem;
         font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem); }
-        @media screen and (max-width: 850px) {
-          body .mGallery .customers .G5 p {
-            margin: 0.5rem 0rem 1rem;
-            max-width: 20ch; } }
     body .mGallery .customers .G6 {
       flex-direction: column;
       grid-area: G6; }
       body .mGallery .customers .G6 img {
         max-height: 300px;
         max-width: 200px; }
-        @media screen and (max-width: 850px) {
-          body .mGallery .customers .G6 img {
-            max-width: 70%;
-            min-width: 100px; } }
       body .mGallery .customers .G6 p {
         text-align: center;
         max-width: 12.5rem;
         margin: 0.5rem 0rem 3rem;
         font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem); }
-        @media screen and (max-width: 850px) {
-          body .mGallery .customers .G6 p {
-            margin: 0.5rem 0rem 1rem;
-            max-width: 20ch; } }
     body .mGallery .customers .G7 {
       flex-direction: column;
       grid-area: G7; }
       body .mGallery .customers .G7 img {
         max-height: 300px;
         max-width: 200px; }
-        @media screen and (max-width: 850px) {
-          body .mGallery .customers .G7 img {
-            max-width: 70%;
-            min-width: 100px; } }
       body .mGallery .customers .G7 p {
         text-align: center;
         max-width: 12.5rem;
         margin: 0.5rem 0rem 3rem;
         font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem); }
-        @media screen and (max-width: 850px) {
-          body .mGallery .customers .G7 p {
-            margin: 0.5rem 0rem 1rem;
-            max-width: 20ch; } }
     body .mGallery .customers .G8 {
       flex-direction: column;
       grid-area: G8; }
       body .mGallery .customers .G8 img {
         max-height: 300px;
         max-width: 200px; }
-        @media screen and (max-width: 850px) {
-          body .mGallery .customers .G8 img {
-            max-width: 70%;
-            min-width: 100px; } }
       body .mGallery .customers .G8 p {
         text-align: center;
         max-width: 12.5rem;
         margin: 0.5rem 0rem 3rem;
         font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem); }
-        @media screen and (max-width: 850px) {
-          body .mGallery .customers .G8 p {
-            margin: 0.5rem 0rem 1rem;
-            max-width: 20ch; } }
   body .contact h2 {
     font-size: clamp(1.25rem, calc(0.977rem + 1.36vw), 2rem); }
   body .contact p {
@@ -476,3 +319,120 @@ body {
       font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem); }
   body footer .footer-dos {
     background-color: rgba(0, 0, 0, 0.2); }
+  @media screen and (max-width: 850px) {
+    body .mainIndex .intro {
+      height: 320px; }
+      body .mainIndex .intro .introIndex {
+        margin-top: 1rem;
+        margin-left: 1.5rem; }
+        body .mainIndex .intro .introIndex h2 {
+          margin-top: 0.5rem; }
+        body .mainIndex .intro .introIndex p {
+          margin-top: 0.5rem; }
+        body .mainIndex .intro .introIndex a {
+          margin-top: 0.2rem; }
+    body .testimonios .testimoniosTitulo h3 {
+      margin-top: 0.5rem; }
+    body .testimonios .testimoniosTitulo p {
+      margin-top: 0.5rem; }
+    body .testimonios .testimoniosFotos {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "tUno tDos" "tTres tCuatro"; }
+    body .testimonios .tUno {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      body .testimonios .tUno img {
+        max-width: 70%; }
+      body .testimonios .tUno p {
+        max-width: 30ch; }
+    body .testimonios .tDos {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      body .testimonios .tDos img {
+        max-width: 70%; }
+      body .testimonios .tDos p {
+        max-width: 30ch; }
+    body .testimonios .tTres {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      body .testimonios .tTres img {
+        max-width: 70%; }
+      body .testimonios .tTres p {
+        max-width: 30ch; }
+    body .testimonios .tCuatro {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      body .testimonios .tCuatro img {
+        max-width: 70%; }
+      body .testimonios .tCuatro p {
+        max-width: 30ch; }
+    body .mGallery .gallery .galleryIntro {
+      background-image: none;
+      height: 320px;
+      margin: 1rem 1rem 1rem;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "txtUno imgGallery" "txtTres imgGallery"; }
+      body .mGallery .gallery .galleryIntro .txtDos {
+        display: none; }
+      body .mGallery .gallery .galleryIntro .txtCuatro {
+        display: none; }
+      body .mGallery .gallery .galleryIntro img {
+        display: block; }
+    body .mGallery .customers {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 3rem 1fr 1fr 1fr 1fr;
+      grid-template-areas: "tGallery tGallery" "G1 G2" "G3 G4" "G5 G6" "G7 G8"; }
+      body .mGallery .customers .G1 img {
+        max-width: 50%;
+        min-width: 150px; }
+      body .mGallery .customers .G1 p {
+        margin: 0.5rem 0rem 1rem;
+        max-width: 20ch; }
+      body .mGallery .customers .G2 img {
+        max-width: 50%;
+        min-width: 150px; }
+      body .mGallery .customers .G2 p {
+        margin: 0.5rem 0rem 1rem;
+        max-width: 20ch; }
+      body .mGallery .customers .G3 img {
+        max-width: 50%;
+        min-width: 150px; }
+      body .mGallery .customers .G3 p {
+        margin: 0.5rem 0rem 1rem;
+        max-width: 20ch; }
+      body .mGallery .customers .G4 img {
+        max-width: 50%;
+        min-width: 150px; }
+      body .mGallery .customers .G4 p {
+        margin: 0.5rem 0rem 1rem;
+        max-width: 20ch; }
+      body .mGallery .customers .G5 img {
+        max-width: 50%;
+        min-width: 150px; }
+      body .mGallery .customers .G5 p {
+        margin: 0.5rem 0rem 1rem;
+        max-width: 20ch; }
+      body .mGallery .customers .G6 img {
+        max-width: 50%;
+        min-width: 150px; }
+      body .mGallery .customers .G6 p {
+        margin: 0.5rem 0rem 1rem;
+        max-width: 20ch; }
+      body .mGallery .customers .G7 img {
+        max-width: 50%;
+        min-width: 150px; }
+      body .mGallery .customers .G7 p {
+        margin: 0.5rem 0rem 1rem;
+        max-width: 20ch; }
+      body .mGallery .customers .G8 img {
+        max-width: 50%;
+        min-width: 150px; }
+      body .mGallery .customers .G8 p {
+        margin: 0.5rem 0rem 1rem;
+        max-width: 20ch; } }
