@@ -5,10 +5,14 @@
   box-sizing: border-box;
   font-size: 100%; }
 
-body .mainIndex .intro .introIndex, body .testimonios {
+body .mainIndex .intro .introIndex, body .testimonios, body .experience, body .experience .experienceInfo {
   display: flex;
   align-items: center;
   justify-content: flex-start; }
+
+body .testimonios .tUno img, body .testimonios .tDos img, body .testimonios .tTres img, body .testimonios .tCuatro img, body .experience .experienceInfo img {
+  height: auto;
+  width: 100%; }
 
 body {
   font-family: "Lato", sans-serif; }
@@ -78,9 +82,6 @@ body {
       gap: 7vw; }
     body .testimonios .tUno {
       grid-area: tUno; }
-      body .testimonios .tUno img {
-        height: auto;
-        width: 100%; }
       body .testimonios .tUno p {
         max-width: 250px;
         text-align: center;
@@ -88,9 +89,6 @@ body {
         font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem); }
     body .testimonios .tDos {
       grid-area: tDos; }
-      body .testimonios .tDos img {
-        height: auto;
-        width: 100%; }
       body .testimonios .tDos p {
         max-width: 250px;
         text-align: center;
@@ -98,9 +96,6 @@ body {
         font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem); }
     body .testimonios .tTres {
       grid-area: tTres; }
-      body .testimonios .tTres img {
-        height: auto;
-        width: 100%; }
       body .testimonios .tTres p {
         max-width: 250px;
         text-align: center;
@@ -108,9 +103,6 @@ body {
         font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem); }
     body .testimonios .tCuatro {
       grid-area: tCuatro; }
-      body .testimonios .tCuatro img {
-        height: auto;
-        width: 100%; }
       body .testimonios .tCuatro p {
         max-width: 250px;
         text-align: center;
@@ -125,6 +117,39 @@ body {
       margin: 3rem;
       font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem); }
       body .testimonios a:hover {
+        background-color: #fd9494; }
+  body .experience {
+    flex-direction: column; }
+    body .experience h2 {
+      margin: calc(min(2vw, 2.5rem));
+      font-size: clamp(1.25rem, calc(0.977rem + 1.36vw), 2rem); }
+    body .experience .experienceInfo div .experienceSubtitulo {
+      font-family: "Dancing Script", cursive;
+      font-size: clamp(1.25rem, calc(0.977rem + 1.36vw), 2rem);
+      text-align: center;
+      margin-bottom: calc(min(2vh, 1rem)); }
+    body .experience .experienceInfo div .experienceParrafo {
+      text-align: center;
+      max-width: 256px;
+      margin-bottom: calc(min(2vh, 1rem));
+      font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem); }
+    body .experience .experienceInfo img {
+      min-width: 100px;
+      margin: calc(min(5vh, 2.5rem));
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; }
+    body .experience h3 {
+      margin: 3rem 0rem 1.5rem;
+      font-size: clamp(1.25rem, calc(0.977rem + 1.36vw), 2rem);
+      text-align: center; }
+    body .experience a {
+      background-color: #fcb3b3;
+      color: white;
+      border-radius: 50px;
+      padding: 0.5rem 2rem;
+      text-decoration: none;
+      margin-bottom: 3rem;
+      font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem); }
+      body .experience a:hover {
         background-color: #fd9494; }
   body footer .footer-dos {
     background-color: rgba(0, 0, 0, 0.2); }

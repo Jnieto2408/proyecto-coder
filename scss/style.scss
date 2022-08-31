@@ -99,8 +99,7 @@ body{
         .tUno{
             grid-area: tUno;
             img{
-                height: auto;
-                width: 100%;
+                @extend %img;
             }
             p{
                 @include parrafo-testimonio;
@@ -109,8 +108,7 @@ body{
         .tDos{
             grid-area: tDos;
             img{
-                height: auto;
-                width: 100%;
+                @extend %img;
             }
             p{
                 @include parrafo-testimonio;
@@ -119,8 +117,7 @@ body{
         .tTres{
             grid-area: tTres;
             img{
-                height: auto;
-                width: 100%;
+                @extend %img;
             }
             p{
                 @include parrafo-testimonio;
@@ -129,8 +126,7 @@ body{
         .tCuatro{
             grid-area: tCuatro;
             img{
-                height: auto;
-                width: 100%;
+                @extend %img;
             }
             p{
                 @include parrafo-testimonio;
@@ -139,6 +135,51 @@ body{
         a{
             @include botton;
             margin: 3rem;
+            font-size: $secundarios;
+            &:hover{
+                background-color: $hover-botton;
+            }
+        }
+    }
+    .experience{
+        @extend %flex;
+        flex-direction: column;
+        h2{
+            margin: calc(min(2vw, 2.5rem));
+            font-size: $principales;
+        }
+        .experienceInfo{
+            @extend %flex;
+            div{
+                .experienceSubtitulo{
+                    font-family: $textos-especiales;
+                    font-size: $principales;
+                    text-align: center;
+                    margin-bottom: calc(min(2vh, 1rem));
+                }
+                .experienceParrafo{
+                    text-align: center;
+                    max-width: 256px;
+                    margin-bottom:calc(min(2vh, 1rem));
+                    font-size: $secundarios;
+                }
+            }
+            img{
+                @extend %img;
+                min-width: 100px;
+                margin: calc(min(5vh, 2.5rem));
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+            }
+        }
+        h3{
+            margin: 3rem 0rem 1.5rem;
+            font-size: $principales;
+            text-align: center;
+        }
+        a{
+            @include botton;
+            margin-bottom: 3rem;
             font-size: $secundarios;
             &:hover{
                 background-color: $hover-botton;
