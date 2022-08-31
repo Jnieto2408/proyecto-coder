@@ -43,20 +43,33 @@ body{
             background-position: 0% 50%;
             height: 490px;
             display: flex;
+            @media screen and (max-width:850px) {
+                height: 320px;
+            }
             .introIndex{
                 @extend %flex;
                 flex-direction: column;
                 margin-top: 5rem;
                 margin-left: 8rem;
                 text-align: center;
+                @media screen and (max-width:850px) {
+                    margin-top: 1rem;
+                    margin-left: 1.5rem;
+                }
                 h2{
                     margin-top: 1rem;
                     font-size: $principales;
+                    @media screen and (max-width:850px) {
+                        margin-top: 0.5rem;
+                    }
                 }
                 p{
                     margin-top: 1rem;
                     max-width: 25ch;
                     font-size: $secundarios;
+                    @media screen and (max-width:850px) {
+                        margin-top: 0.5rem;
+                    }
                 }
                 a{
                     @include botton;
@@ -65,6 +78,9 @@ body{
                     font-size: $secundarios;
                     &:hover{
                         background-color: $hover-botton;
+                    }
+                    @media screen and (max-width:850px) {
+                        margin-top: 0.2rem;
                     }
                 }
             }
@@ -80,11 +96,17 @@ body{
             h3{
                 margin-top: 1rem;
                 font-size: $principales;
+                @media screen and (max-width:850px) {
+                    margin-top: 0.5rem;
+                }
             }
             p{
                 margin-top: 1rem;
                 font-size: $secundarios;
                 margin-bottom: 2rem;
+                @media screen and (max-width:850px) {
+                    margin-top: 0.5rem;
+                }
             }
         }
         .testimoniosFotos{
@@ -95,41 +117,93 @@ body{
             "tUno tDos tTres tCuatro"
             ;
             gap: 7vw;
+            @media screen and (max-width:850px) {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas:
+                "tUno tDos"
+                "tTres tCuatro"
+                ;
+            }
         }
         .tUno{
             grid-area: tUno;
+            @media screen and (max-width:850px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
             img{
                 @extend %img;
+                @media screen and (max-width:850px) {
+                    max-width: 70%;
+                }
             }
             p{
                 @include parrafo-testimonio;
+                @media screen and (max-width:850px) {
+                    max-width: 30ch;
+                }
             }
         }
         .tDos{
             grid-area: tDos;
+            @media screen and (max-width:850px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
             img{
                 @extend %img;
+                @media screen and (max-width:850px) {
+                    max-width: 70%;
+                }
             }
             p{
                 @include parrafo-testimonio;
+                @media screen and (max-width:850px) {
+                    max-width: 30ch;
+                }
             }
         }
         .tTres{
             grid-area: tTres;
+            @media screen and (max-width:850px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
             img{
                 @extend %img;
+                @media screen and (max-width:850px) {
+                    max-width: 70%;
+                }
             }
             p{
                 @include parrafo-testimonio;
+                @media screen and (max-width:850px) {
+                    max-width: 30ch;
+                }
             }
         }
         .tCuatro{
             grid-area: tCuatro;
+            @media screen and (max-width:850px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
             img{
                 @extend %img;
+                @media screen and (max-width:850px) {
+                    max-width: 70%;
+                }
             }
             p{
                 @include parrafo-testimonio;
+                @media screen and (max-width:850px) {
+                    max-width: 30ch;
+                }
             }
         }
         a{
@@ -209,6 +283,17 @@ body{
                 justify-items: center;
                 align-items: center;
                 column-gap: 3vw;
+                @media screen and (max-width:850px) {
+                    background-image: none;
+                    height: 320px;
+                    margin: 1rem 1rem 1rem;
+                    grid-template-columns:1fr 1fr;
+                    grid-template-rows: 1fr 1fr;
+                    grid-template-areas:
+                    "txtUno imgGallery"
+                    "txtTres imgGallery"
+                    ;
+                }
                 .txtUno{
                     @include txt-gallery;
                     grid-area: txtUno;
@@ -216,6 +301,9 @@ body{
                 .txtDos{
                     @include txt-gallery;
                     grid-area: txtDos;
+                    @media screen and (max-width:850px) {
+                        display: none;
+                    }
                 }
                 .txtTres{
                     @include txt-gallery;
@@ -224,13 +312,20 @@ body{
                 .txtCuatro{
                     @include txt-gallery;
                     grid-area: txtCuatro;
+                    @media screen and (max-width:850px) {
+                        display: none;
+                    }
                 }
                 img{
                     @extend %img;
+                    grid-area: imgGallery;
                     display: none;
                     min-width: 125px;
                     max-width: 225px;
                     max-height: 320px;
+                    @media screen and (max-width:850px) {
+                        display: block;
+                    }
                 }
             }
         }
@@ -244,6 +339,17 @@ body{
             "G5 G6 G7 G8"
             ;
             gap: 2rem;
+            @media screen and (max-width:850px) {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 3rem 1fr 1fr 1fr 1fr;
+                grid-template-areas:
+                "tGallery tGallery"
+                "G1 G2"
+                "G3 G4"
+                "G5 G6"
+                "G7 G8"
+                ;
+            }
             .tGallery{
                 grid-area: tGallery;
                 text-align: center;
@@ -257,9 +363,17 @@ body{
                     @extend %img;
                     max-height: 300px;
                     max-width: 200px;
+                    @media screen and (max-width:850px) {
+                        width: 70%;
+                        min-width: 100px;
+                    }
                 }
                 p{
                     @include txt-customers;
+                    @media screen and (max-width:850px) {
+                        margin: 0.5rem 0rem 1rem;
+                        max-width: 20ch;
+                    }
                 }
             }
             .G2{
@@ -270,9 +384,17 @@ body{
                     @extend %img;
                     max-height: 300px;
                     max-width: 200px;
+                    @media screen and (max-width:850px) {
+                        width: 70%;
+                        min-width: 100px;
+                    }
                 }
                 p{
                     @include txt-customers;
+                    @media screen and (max-width:850px) {
+                        margin: 0.5rem 0rem 1rem;
+                        max-width: 20ch;
+                    }
                 }
             }
             .G3{
@@ -283,9 +405,17 @@ body{
                     @extend %img;
                     max-height: 300px;
                     max-width: 200px;
+                    @media screen and (max-width:850px) {
+                        width: 70%;
+                        min-width: 100px;
+                    }
                 }
                 p{
                     @include txt-customers;
+                    @media screen and (max-width:850px) {
+                        margin: 0.5rem 0rem 1rem;
+                        max-width: 20ch;
+                    }
                 }
             }
             .G4{
@@ -296,9 +426,17 @@ body{
                     @extend %img;
                     max-height: 300px;
                     max-width: 200px;
+                    @media screen and (max-width:850px) {
+                        width: 70%;
+                        min-width: 100px;
+                    }
                 }
                 p{
                     @include txt-customers;
+                    @media screen and (max-width:850px) {
+                        margin: 0.5rem 0rem 1rem;
+                        max-width: 20ch;
+                    }
                 }
             }
             .G5{
@@ -309,9 +447,17 @@ body{
                     @extend %img;
                     max-height: 300px;
                     max-width: 200px;
+                    @media screen and (max-width:850px) {
+                        width: 70%;
+                        min-width: 100px;
+                    }
                 }
                 p{
                     @include txt-customers;
+                    @media screen and (max-width:850px) {
+                        margin: 0.5rem 0rem 1rem;
+                        max-width: 20ch;
+                    }
                 }
             }
             .G6{
@@ -322,9 +468,17 @@ body{
                     @extend %img;
                     max-height: 300px;
                     max-width: 200px;
+                    @media screen and (max-width:850px) {
+                        width: 70%;
+                        min-width: 100px;
+                    }
                 }
                 p{
                     @include txt-customers;
+                    @media screen and (max-width:850px) {
+                        margin: 0.5rem 0rem 1rem;
+                        max-width: 20ch;
+                    }
                 }
             }
             .G7{
@@ -335,9 +489,17 @@ body{
                     @extend %img;
                     max-height: 300px;
                     max-width: 200px;
+                    @media screen and (max-width:850px) {
+                        width: 70%;
+                        min-width: 100px;
+                    }
                 }
                 p{
                     @include txt-customers;
+                    @media screen and (max-width:850px) {
+                        margin: 0.5rem 0rem 1rem;
+                        max-width: 20ch;
+                    }
                 }
             }
             .G8{
@@ -348,9 +510,17 @@ body{
                     @extend %img;
                     max-height: 300px;
                     max-width: 200px;
+                    @media screen and (max-width:850px) {
+                        width: 70%;
+                        min-width: 100px;
+                    }
                 }
                 p{
                     @include txt-customers;
+                    @media screen and (max-width:850px) {
+                        margin: 0.5rem 0rem 1rem;
+                        max-width: 20ch;
+                    }
                 }
             }
         }
