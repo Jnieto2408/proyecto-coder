@@ -5,12 +5,12 @@
   box-sizing: border-box;
   font-size: 100%; }
 
-body .mainIndex .intro .introIndex, body .testimonios, body .experience, body .experience .experienceInfo {
+body .mainIndex .intro .introIndex, body .testimonios, body .experience, body .experience .experienceInfo, body .mGallery .customers .G1, body .mGallery .customers .G2, body .mGallery .customers .G3, body .mGallery .customers .G4, body .mGallery .customers .G5, body .mGallery .customers .G6, body .mGallery .customers .G7, body .mGallery .customers .G8 {
   display: flex;
   align-items: center;
   justify-content: flex-start; }
 
-body .testimonios .tUno img, body .testimonios .tDos img, body .testimonios .tTres img, body .testimonios .tCuatro img, body .experience .experienceInfo img {
+body .testimonios .tUno img, body .testimonios .tDos img, body .testimonios .tTres img, body .testimonios .tCuatro img, body .experience .experienceInfo img, body .mGallery .gallery .galleryIntro img, body .mGallery .customers .G1 img, body .mGallery .customers .G2 img, body .mGallery .customers .G3 img, body .mGallery .customers .G4 img, body .mGallery .customers .G5 img, body .mGallery .customers .G6 img, body .mGallery .customers .G7 img, body .mGallery .customers .G8 img {
   height: auto;
   width: 100%; }
 
@@ -151,5 +151,145 @@ body {
       font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem); }
       body .experience a:hover {
         background-color: #fd9494; }
+  body .mGallery .gallery h2 {
+    text-align: center;
+    font-size: clamp(1.25rem, calc(0.977rem + 1.36vw), 2rem);
+    margin: calc(min(2vw, 2.5rem)); }
+  body .mGallery .gallery .galleryIntro {
+    background-image: url(../img/imgGallery/galleryIntro.png);
+    background-size: cover;
+    background-position: 0% 40%;
+    height: 490px;
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "txtUno txtDos" "txtTres txtCuatro";
+    justify-items: center;
+    align-items: center;
+    column-gap: 3vw; }
+    body .mGallery .gallery .galleryIntro .txtUno {
+      text-align: center;
+      max-width: 15rem;
+      font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem);
+      grid-area: txtUno; }
+    body .mGallery .gallery .galleryIntro .txtDos {
+      text-align: center;
+      max-width: 15rem;
+      font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem);
+      grid-area: txtDos; }
+    body .mGallery .gallery .galleryIntro .txtTres {
+      text-align: center;
+      max-width: 15rem;
+      font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem);
+      grid-area: txtTres; }
+    body .mGallery .gallery .galleryIntro .txtCuatro {
+      text-align: center;
+      max-width: 15rem;
+      font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem);
+      grid-area: txtCuatro; }
+    body .mGallery .gallery .galleryIntro img {
+      display: none;
+      min-width: 125px;
+      max-width: 225px;
+      max-height: 320px; }
+  body .mGallery .customers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 4rem 1fr 1fr;
+    grid-template-areas: "tGallery tGallery tGallery tGallery" "G1 G2 G3 G4" "G5 G6 G7 G8";
+    gap: 2rem; }
+    body .mGallery .customers .tGallery {
+      grid-area: tGallery;
+      text-align: center;
+      font-size: clamp(1.25rem, calc(0.977rem + 1.36vw), 2rem); }
+    body .mGallery .customers .G1 {
+      flex-direction: column;
+      grid-area: G1; }
+      body .mGallery .customers .G1 img {
+        max-height: 300px;
+        max-width: 200px; }
+      body .mGallery .customers .G1 p {
+        text-align: center;
+        max-width: 12.5rem;
+        margin: 0.5rem 0rem 3rem;
+        font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem); }
+    body .mGallery .customers .G2 {
+      flex-direction: column;
+      grid-area: G2; }
+      body .mGallery .customers .G2 img {
+        max-height: 300px;
+        max-width: 200px; }
+      body .mGallery .customers .G2 p {
+        text-align: center;
+        max-width: 12.5rem;
+        margin: 0.5rem 0rem 3rem;
+        font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem); }
+    body .mGallery .customers .G3 {
+      flex-direction: column;
+      grid-area: G3; }
+      body .mGallery .customers .G3 img {
+        max-height: 300px;
+        max-width: 200px; }
+      body .mGallery .customers .G3 p {
+        text-align: center;
+        max-width: 12.5rem;
+        margin: 0.5rem 0rem 3rem;
+        font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem); }
+    body .mGallery .customers .G4 {
+      flex-direction: column;
+      grid-area: G4; }
+      body .mGallery .customers .G4 img {
+        max-height: 300px;
+        max-width: 200px; }
+      body .mGallery .customers .G4 p {
+        text-align: center;
+        max-width: 12.5rem;
+        margin: 0.5rem 0rem 3rem;
+        font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem); }
+    body .mGallery .customers .G5 {
+      flex-direction: column;
+      grid-area: G5; }
+      body .mGallery .customers .G5 img {
+        max-height: 300px;
+        max-width: 200px; }
+      body .mGallery .customers .G5 p {
+        text-align: center;
+        max-width: 12.5rem;
+        margin: 0.5rem 0rem 3rem;
+        font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem); }
+    body .mGallery .customers .G6 {
+      flex-direction: column;
+      grid-area: G6; }
+      body .mGallery .customers .G6 img {
+        max-height: 300px;
+        max-width: 200px; }
+      body .mGallery .customers .G6 p {
+        text-align: center;
+        max-width: 12.5rem;
+        margin: 0.5rem 0rem 3rem;
+        font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem); }
+    body .mGallery .customers .G7 {
+      flex-direction: column;
+      grid-area: G7; }
+      body .mGallery .customers .G7 img {
+        max-height: 300px;
+        max-width: 200px; }
+      body .mGallery .customers .G7 p {
+        text-align: center;
+        max-width: 12.5rem;
+        margin: 0.5rem 0rem 3rem;
+        font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem); }
+    body .mGallery .customers .G8 {
+      flex-direction: column;
+      grid-area: G8; }
+      body .mGallery .customers .G8 img {
+        max-height: 300px;
+        max-width: 200px; }
+      body .mGallery .customers .G8 p {
+        text-align: center;
+        max-width: 12.5rem;
+        margin: 0.5rem 0rem 3rem;
+        font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem); }
   body footer .footer-dos {
     background-color: rgba(0, 0, 0, 0.2); }

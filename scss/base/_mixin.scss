@@ -12,3 +12,14 @@
     margin-top: 0.5rem;
     font-size: $secundarios;
 }
+@mixin txt-gallery {
+    text-align: center;
+    max-width: 15rem;
+    font-size: $secundarios;
+}
+@mixin txt-customers {
+    text-align: center;
+    max-width: 12.5rem;
+    margin: 0.5rem 0rem 3rem;
+    font-size: $secundarios;
+}

@@ -186,6 +186,175 @@ body{
             }
         }
     }
+    .mGallery{
+        .gallery{
+            h2{
+                text-align: center;
+                font-size: $principales;
+                margin: calc(min(2vw, 2.5rem));
+            }
+            .galleryIntro{
+                background-image: url(../img/imgGallery/galleryIntro.png);
+                background-size: cover;
+                background-position:0% 40%;
+                height: 490px;
+                margin-bottom: 3rem;
+                display: grid;
+                grid-template-columns:1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas:
+                "txtUno txtDos"
+                "txtTres txtCuatro"
+                ;
+                justify-items: center;
+                align-items: center;
+                column-gap: 3vw;
+                .txtUno{
+                    @include txt-gallery;
+                    grid-area: txtUno;
+                }
+                .txtDos{
+                    @include txt-gallery;
+                    grid-area: txtDos;
+                }
+                .txtTres{
+                    @include txt-gallery;
+                    grid-area: txtTres;
+                }
+                .txtCuatro{
+                    @include txt-gallery;
+                    grid-area: txtCuatro;
+                }
+                img{
+                    @extend %img;
+                    display: none;
+                    min-width: 125px;
+                    max-width: 225px;
+                    max-height: 320px;
+                }
+            }
+        }
+        .customers{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 4rem 1fr 1fr;
+            grid-template-areas:
+            "tGallery tGallery tGallery tGallery"
+            "G1 G2 G3 G4"
+            "G5 G6 G7 G8"
+            ;
+            gap: 2rem;
+            .tGallery{
+                grid-area: tGallery;
+                text-align: center;
+                font-size: $principales;
+            }
+            .G1{
+                @extend %flex;
+                flex-direction: column;
+                grid-area: G1;
+                img{
+                    @extend %img;
+                    max-height: 300px;
+                    max-width: 200px;
+                }
+                p{
+                    @include txt-customers;
+                }
+            }
+            .G2{
+                @extend %flex;
+                flex-direction: column;
+                grid-area: G2;
+                img{
+                    @extend %img;
+                    max-height: 300px;
+                    max-width: 200px;
+                }
+                p{
+                    @include txt-customers;
+                }
+            }
+            .G3{
+                @extend %flex;
+                flex-direction: column;
+                grid-area: G3;
+                img{
+                    @extend %img;
+                    max-height: 300px;
+                    max-width: 200px;
+                }
+                p{
+                    @include txt-customers;
+                }
+            }
+            .G4{
+                @extend %flex;
+                flex-direction: column;
+                grid-area: G4;
+                img{
+                    @extend %img;
+                    max-height: 300px;
+                    max-width: 200px;
+                }
+                p{
+                    @include txt-customers;
+                }
+            }
+            .G5{
+                @extend %flex;
+                flex-direction: column;
+                grid-area: G5;
+                img{
+                    @extend %img;
+                    max-height: 300px;
+                    max-width: 200px;
+                }
+                p{
+                    @include txt-customers;
+                }
+            }
+            .G6{
+                @extend %flex;
+                flex-direction: column;
+                grid-area: G6;
+                img{
+                    @extend %img;
+                    max-height: 300px;
+                    max-width: 200px;
+                }
+                p{
+                    @include txt-customers;
+                }
+            }
+            .G7{
+                @extend %flex;
+                flex-direction: column;
+                grid-area: G7;
+                img{
+                    @extend %img;
+                    max-height: 300px;
+                    max-width: 200px;
+                }
+                p{
+                    @include txt-customers;
+                }
+            }
+            .G8{
+                @extend %flex;
+                flex-direction: column;
+                grid-area: G8;
+                img{
+                    @extend %img;
+                    max-height: 300px;
+                    max-width: 200px;
+                }
+                p{
+                    @include txt-customers;
+                }
+            }
+        }
+    }
     footer{
         .footer-dos{
             background-color: rgba(0, 0, 0, 0.2)
