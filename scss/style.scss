@@ -379,6 +379,29 @@ body{
             }
         }
     }
+    .intro-shop{
+        div{
+            div{
+                h2{
+                    font-size: $principales;
+                }
+                p{
+                    font-size: $secundarios;
+                }
+            }
+        }
+    }
+    .main-shop{
+        div{
+            div{
+                div{
+                    .card-shop{
+                        max-width: 155px;
+                    }
+                }
+            }
+        }
+    }
     footer{
         .footer-dos{
             background-color: rgba(0, 0, 0, 0.2)
