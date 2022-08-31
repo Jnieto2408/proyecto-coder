@@ -9,6 +9,7 @@
 @import "./base/variables";
 @import "./base/mixin";
 @import "./base/extend";
+@import "./base/listas";
 
 body{
     font-family: $textos;
@@ -136,7 +137,7 @@ body{
             img{
                 @extend %img;
                 @media screen and (max-width:850px) {
-                    max-width: 70%;
+                    max-width: nth($width,3);
                 }
             }
             p{
@@ -156,7 +157,7 @@ body{
             img{
                 @extend %img;
                 @media screen and (max-width:850px) {
-                    max-width: 70%;
+                    max-width: nth($width,3);
                 }
             }
             p{
@@ -176,7 +177,7 @@ body{
             img{
                 @extend %img;
                 @media screen and (max-width:850px) {
-                    max-width: 70%;
+                    max-width: nth($width,3);
                 }
             }
             p{
@@ -196,7 +197,7 @@ body{
             img{
                 @extend %img;
                 @media screen and (max-width:850px) {
-                    max-width: 70%;
+                    max-width: nth($width,3);
                 }
             }
             p{
@@ -364,7 +365,7 @@ body{
                     max-height: 300px;
                     max-width: 200px;
                     @media screen and (max-width:850px) {
-                        width: 70%;
+                        max-width: nth($width,3);
                         min-width: 100px;
                     }
                 }
@@ -385,7 +386,7 @@ body{
                     max-height: 300px;
                     max-width: 200px;
                     @media screen and (max-width:850px) {
-                        width: 70%;
+                        max-width: nth($width,3);
                         min-width: 100px;
                     }
                 }
@@ -406,7 +407,7 @@ body{
                     max-height: 300px;
                     max-width: 200px;
                     @media screen and (max-width:850px) {
-                        width: 70%;
+                        max-width: nth($width,3);
                         min-width: 100px;
                     }
                 }
@@ -427,7 +428,7 @@ body{
                     max-height: 300px;
                     max-width: 200px;
                     @media screen and (max-width:850px) {
-                        width: 70%;
+                        max-width: nth($width,3);
                         min-width: 100px;
                     }
                 }
@@ -448,7 +449,7 @@ body{
                     max-height: 300px;
                     max-width: 200px;
                     @media screen and (max-width:850px) {
-                        width: 70%;
+                        max-width: nth($width,3);
                         min-width: 100px;
                     }
                 }
@@ -469,7 +470,7 @@ body{
                     max-height: 300px;
                     max-width: 200px;
                     @media screen and (max-width:850px) {
-                        width: 70%;
+                        max-width: nth($width,3);
                         min-width: 100px;
                     }
                 }
@@ -490,7 +491,7 @@ body{
                     max-height: 300px;
                     max-width: 200px;
                     @media screen and (max-width:850px) {
-                        width: 70%;
+                        max-width: nth($width,3);
                         min-width: 100px;
                     }
                 }
@@ -511,7 +512,7 @@ body{
                     max-height: 300px;
                     max-width: 200px;
                     @media screen and (max-width:850px) {
-                        width: 70%;
+                        max-width: nth($width,3);
                         min-width: 100px;
                     }
                 }

@@ -305,7 +305,7 @@ body {
         max-width: 200px; }
         @media screen and (max-width: 850px) {
           body .mGallery .customers .G1 img {
-            width: 70%;
+            max-width: 70%;
             min-width: 100px; } }
       body .mGallery .customers .G1 p {
         text-align: center;
@@ -324,7 +324,7 @@ body {
         max-width: 200px; }
         @media screen and (max-width: 850px) {
           body .mGallery .customers .G2 img {
-            width: 70%;
+            max-width: 70%;
             min-width: 100px; } }
       body .mGallery .customers .G2 p {
         text-align: center;
@@ -343,7 +343,7 @@ body {
         max-width: 200px; }
         @media screen and (max-width: 850px) {
           body .mGallery .customers .G3 img {
-            width: 70%;
+            max-width: 70%;
             min-width: 100px; } }
       body .mGallery .customers .G3 p {
         text-align: center;
@@ -362,7 +362,7 @@ body {
         max-width: 200px; }
         @media screen and (max-width: 850px) {
           body .mGallery .customers .G4 img {
-            width: 70%;
+            max-width: 70%;
             min-width: 100px; } }
       body .mGallery .customers .G4 p {
         text-align: center;
@@ -381,7 +381,7 @@ body {
         max-width: 200px; }
         @media screen and (max-width: 850px) {
           body .mGallery .customers .G5 img {
-            width: 70%;
+            max-width: 70%;
             min-width: 100px; } }
       body .mGallery .customers .G5 p {
         text-align: center;
@@ -400,7 +400,7 @@ body {
         max-width: 200px; }
         @media screen and (max-width: 850px) {
           body .mGallery .customers .G6 img {
-            width: 70%;
+            max-width: 70%;
             min-width: 100px; } }
       body .mGallery .customers .G6 p {
         text-align: center;
@@ -419,7 +419,7 @@ body {
         max-width: 200px; }
         @media screen and (max-width: 850px) {
           body .mGallery .customers .G7 img {
-            width: 70%;
+            max-width: 70%;
             min-width: 100px; } }
       body .mGallery .customers .G7 p {
         text-align: center;
@@ -438,7 +438,7 @@ body {
         max-width: 200px; }
         @media screen and (max-width: 850px) {
           body .mGallery .customers .G8 img {
-            width: 70%;
+            max-width: 70%;
             min-width: 100px; } }
       body .mGallery .customers .G8 p {
         text-align: center;
