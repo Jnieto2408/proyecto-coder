@@ -355,6 +355,30 @@ body{
             }
         }
     }
+    .contact{
+        h2{
+            font-size: $principales;
+        }
+        p{
+            font-size: $secundarios;
+        }
+        .contact-mapa{
+            @extend %flex;
+            justify-content: center;
+            margin: 3rem 10%;
+            overflow: hidden;
+            padding-bottom: 40%;
+            position: relative;
+            height: 0;
+            iframe{
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+            }
+        }
+    }
     footer{
         .footer-dos{
             background-color: rgba(0, 0, 0, 0.2)

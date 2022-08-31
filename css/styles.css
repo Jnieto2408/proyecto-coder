@@ -5,7 +5,7 @@
   box-sizing: border-box;
   font-size: 100%; }
 
-body .mainIndex .intro .introIndex, body .testimonios, body .experience, body .experience .experienceInfo, body .mGallery .customers .G1, body .mGallery .customers .G2, body .mGallery .customers .G3, body .mGallery .customers .G4, body .mGallery .customers .G5, body .mGallery .customers .G6, body .mGallery .customers .G7, body .mGallery .customers .G8 {
+body .mainIndex .intro .introIndex, body .testimonios, body .experience, body .experience .experienceInfo, body .mGallery .customers .G1, body .mGallery .customers .G2, body .mGallery .customers .G3, body .mGallery .customers .G4, body .mGallery .customers .G5, body .mGallery .customers .G6, body .mGallery .customers .G7, body .mGallery .customers .G8, body .contact .contact-mapa {
   display: flex;
   align-items: center;
   justify-content: flex-start; }
@@ -291,5 +291,22 @@ body {
         max-width: 12.5rem;
         margin: 0.5rem 0rem 3rem;
         font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem); }
+  body .contact h2 {
+    font-size: clamp(1.25rem, calc(0.977rem + 1.36vw), 2rem); }
+  body .contact p {
+    font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem); }
+  body .contact .contact-mapa {
+    justify-content: center;
+    margin: 3rem 10%;
+    overflow: hidden;
+    padding-bottom: 40%;
+    position: relative;
+    height: 0; }
+    body .contact .contact-mapa iframe {
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute; }
   body footer .footer-dos {
     background-color: rgba(0, 0, 0, 0.2); }
