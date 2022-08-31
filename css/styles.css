@@ -51,9 +51,9 @@ body {
         border-radius: 50px;
         padding: 0.5rem 2rem;
         text-decoration: none;
-        margin-top: 1rem;
+        margin-top: 0.5rem;
         display: inline-block;
-        font-size: clamp(0.5rem, 1vw, 1rem); }
+        font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem); }
         body .mainIndex .intro .introIndex a:hover {
           background-color: #fd9494; }
   body .testimonios {
@@ -124,7 +124,7 @@ body {
       padding: 0.5rem 2rem;
       text-decoration: none;
       margin: 3rem;
-      font-size: clamp(0.5rem, 1vw, 1rem); }
+      font-size: clamp(0.625rem, calc(0.489rem + 0.68vw), 1rem); }
       body .testimonios a:hover {
         background-color: #fd9494; }
   body footer .footer-dos {

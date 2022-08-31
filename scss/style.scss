@@ -62,11 +62,11 @@ body{
                 }
                 a{
                     @include botton;
-                    margin-top: 1rem;
+                    margin-top: 0.5rem;
                     display: inline-block;
-                    font-size: clamp(0.5rem, 1vw, 1rem);
+                    font-size: $secundarios;
                     &:hover{
-                        background-color: rgb(253, 148, 148);
+                        background-color: $hover-botton;
                     }
                 }
             }
@@ -154,9 +154,9 @@ body{
         a{
             @include botton;
             margin: 3rem;
-            font-size: clamp(0.5rem, 1vw, 1rem);
+            font-size: $secundarios;
             &:hover{
-                background-color: rgb(253, 148, 148);
+                background-color: $hover-botton;
             }
         }
     }
