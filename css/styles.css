@@ -27,7 +27,7 @@ body {
       body .menu nav div .logo h1 {
         margin: 0rem 1rem; }
       body .menu nav div .logo span {
-        background-image: url(../img/imgLogos/Logo.jpg);
+        background-image: url(../img/imgLogos/Logo.png);
         background-size: contain;
         background-clip: text;
         -webkit-background-clip: text;
