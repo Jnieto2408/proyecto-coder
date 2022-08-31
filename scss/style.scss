@@ -8,6 +8,7 @@
 // Sub-archivos SASS
 @import "./base/variables";
 @import "./base/mixin";
+@import "./base/extend";
 
 body{
     font-family: $textos;
@@ -42,14 +43,11 @@ body{
             background-position: 0% 50%;
             height: 490px;
             display: flex;
-            justify-content: left;
             .introIndex{
-                display: flex;
+                @extend %flex;
                 flex-direction: column;
                 margin-top: 5rem;
                 margin-left: 8rem;
-                justify-content: flex-start;
-                align-items: center;
                 text-align: center;
                 h2{
                     margin-top: 1rem;
@@ -74,10 +72,9 @@ body{
     }
     .testimonios{
         margin-top: 2rem;
-        display: flex;
+        @extend %flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
         .testimoniosTitulo{
             text-align: center;
             h3{
