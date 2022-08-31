@@ -103,10 +103,7 @@ body{
                 width: 100%;
             }
             p{
-                max-width: 250px;
-                text-align: center;
-                margin-top: 0.5rem;
-                font-size: $secundarios;
+                @include parrafo-testimonio;
             }
         }
         .tDos{
@@ -116,10 +113,7 @@ body{
                 width: 100%;
             }
             p{
-                max-width: 250px;
-                text-align: center;
-                margin-top: 0.5rem;
-                font-size: $secundarios;
+                @include parrafo-testimonio;
             }
         }
         .tTres{
@@ -129,10 +123,7 @@ body{
                 width: 100%;
             }
             p{
-                max-width: 250px;
-                text-align: center;
-                margin-top: 0.5rem;
-                font-size: $secundarios;
+                @include parrafo-testimonio;
             }
         }
         .tCuatro{
@@ -142,10 +133,7 @@ body{
                 width: 100%;
             }
             p{
-                max-width: 250px;
-                text-align: center;
-                margin-top: 0.5rem;
-                font-size: $secundarios;
+                @include parrafo-testimonio;
             }
         }
         a{

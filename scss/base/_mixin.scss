@@ -6,3 +6,9 @@
     padding: 0.5rem 2rem;
     text-decoration: none;
 }
+@mixin parrafo-testimonio {
+    max-width: 250px;
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: $secundarios;
+}
