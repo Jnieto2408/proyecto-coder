@@ -12,7 +12,8 @@ body .mainIndex .intro .introIndex, body .testimonios, body .experience, body .e
 
 body .testimonios .tUno img, body .testimonios .tDos img, body .testimonios .tTres img, body .testimonios .tCuatro img, body .experience .experienceInfo img, body .mGallery .gallery .galleryIntro img, body .mGallery .customers .G1 img, body .mGallery .customers .G2 img, body .mGallery .customers .G3 img, body .mGallery .customers .G4 img, body .mGallery .customers .G5 img, body .mGallery .customers .G6 img, body .mGallery .customers .G7 img, body .mGallery .customers .G8 img {
   height: auto;
-  width: 100%; }
+  width: 100%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; }
 
 body {
   font-family: "Lato", sans-serif; }
